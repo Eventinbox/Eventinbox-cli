@@ -1,0 +1,14 @@
+# Binaries
+/eventinbox
+/Eventinbox-cli
+*.exe
+
+# goreleaser output
+/dist/
+
+# Local env / secrets
+.env
+*.local
+
+# OS
+.DS_Store
