@@ -10,7 +10,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "eventinbox",
 	Short: "EventInbox CLI — webhook delivery infrastructure",
-	Long:  `Manage endpoints, inspect events, replay deliveries, and forward webhooks to localhost.`,
+	Long:  `Send test events, list and inspect deliveries, replay deliveries, and tail live delivery logs.`,
 }
 
 func Execute() {
