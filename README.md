@@ -6,15 +6,29 @@ delivery logs, and replay deliveries from your terminal.
 
 ## Install
 
+### Download a prebuilt binary
+
+Prebuilt binaries for macOS, Linux, and Windows (amd64 + arm64) are attached
+to each [GitHub release](https://github.com/Eventinbox/Eventinbox-cli/releases).
+Download the archive for your platform, extract it, and put the `eventinbox`
+binary somewhere on your `PATH`. For example, on macOS (Apple Silicon):
+
+```sh
+curl -LO https://github.com/Eventinbox/Eventinbox-cli/releases/download/v0.1.0/Eventinbox-cli_0.1.0_darwin_arm64.tar.gz
+tar -xzf Eventinbox-cli_0.1.0_darwin_arm64.tar.gz eventinbox
+sudo mv eventinbox /usr/local/bin/
+```
+
+A `checksums.txt` file is attached to each release for verifying downloads.
+
+### go install
+
 ```sh
 go install github.com/Eventinbox/Eventinbox-cli@latest
 ```
 
-This installs the `Eventinbox-cli` binary into `$(go env GOPATH)/bin`. Make
+This installs the binary as `Eventinbox-cli` into `$(go env GOPATH)/bin`. Make
 sure that directory is on your `PATH`.
-
-Prebuilt binaries for macOS, Linux, and Windows (amd64 + arm64) are also
-attached to each [GitHub release](https://github.com/Eventinbox/Eventinbox-cli/releases).
 
 ## Authentication
 
